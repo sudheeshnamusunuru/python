@@ -130,3 +130,100 @@ print(subjects)
 subjects = {"Python","Java","SQL"}
 subjects.remove("Java")
 print(subjects)
+
+#Sets do not allow duplicate values
+numbers = {1,2,2,3,3,4}
+print(numbers)
+
+
+#slice method
+#start,stop,step
+numbers=[10,20,30,40,50,60,70,80]
+print(numbers[1:7:2])
+print(numbers[6:1:-2])
+
+#dictionary in python
+#dictionary is a collection of  key value pairs and unordered and mutable
+
+student = {
+    "name":"Bhargavi",
+    "age":00,
+    "course":"Python"
+}
+print(student)
+
+
+#access elements in dictionary
+print(student["name"])
+print(student["age"])
+print(student["course"])
+
+
+#change values in a dictionary
+student["age"] = 11
+print(student["age"])
+
+
+#add new data to a dictionary
+student["city"] = "vijayawada"
+print(student)
+
+#remove data
+student.pop("city")
+print(student)
+#when we use pop method it removes last inserted method in the list
+
+#dictionary
+student = {
+    "name":"Bhargavi",
+    "age":21,
+    "course":"Python"
+}
+print(student.keys())
+#keys() returns all the keys in the dictionary
+print(student.values())
+#values returns all the values in the dictionary
+print(student.items())
+#items()returns all key value pairs
+print(student.get("name"))
+#get()returns the value of the specified key
+student.update({"age":22})
+#update()updates the value of specified key
+print(student)
+student.pop("age")
+#pop()removes the specified key and its value
+print(student)
+
+#popitem()removes the last inserted key-value pair
+student = {
+    "name":"Bhargavi",
+    "age":21,
+    "course":"Python"
+}
+student.popitem()
+print(student)
+
+student = {
+    "name": "Bhargavi"
+}
+student.setdefault("age",21)
+print(student)
+
+#clear method
+student.clear()
+print(student)
+
+#copy method
+student = {
+   "name":"Bhargavi",
+   "age":21
+}
+new_student = student.copy()
+print(new_student)
+
+#order of evaluation(BODMAS)
+result = 2+13*2
+print(result)
+
+result = (10+5)*2
+print(result)
