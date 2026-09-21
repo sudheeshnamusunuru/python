@@ -225,4 +225,3 @@ num = int(input("Enter a number:")) #num=48
 tens = num//10 #tens = 48//10 = 4
 units = num%10 #units = 48%10 = 8
 total = tens + units #total = 4+8 = 12
-print(total)
